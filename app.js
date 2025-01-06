@@ -10,7 +10,7 @@ const userFunctions = require("./models/userFunctions");
 const cors = require('cors');
 const app = express();
 const corsOptions = {
-    origin: 'https://dominoclonefullstack.vercel.app/' ,  // List of allowed domains
+    origin: 'https://dominoclonefullstack.vercel.app' ,  // List of allowed domains
     credentials: true, // Allow cookies to be sent and received
     methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowed methods
     allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
