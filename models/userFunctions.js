@@ -34,7 +34,7 @@ exports.signup = async (req, res) => {
           expires: new Date(
               Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
           ),
-          // secure: true,
+          secure: true,
           httpOnly: true,
         });
         return res.json({ message: "User successfully registered!"});
@@ -79,7 +79,7 @@ exports.login = async (req, res) => {
          expires: new Date(
              Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
          ),
-         // secure: true,
+         secure: true,
          httpOnly: true,
        });
        return res.json({ message: "login successfull" });
