@@ -81,6 +81,7 @@ exports.login = async (req, res) => {
          ),
          secure: true,
          httpOnly: true,
+        sameSite: 'None'
        });
        return res.json({ message: "login successfull" });
      }
